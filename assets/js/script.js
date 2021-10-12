@@ -36,6 +36,7 @@ function listaTable() {
     tbody.innerHTML = '';
     if (dbStorage.getStorage() != null) {
         arrayProdutos = JSON.parse(dbStorage.getStorage());
+        document.querySelector('tfoot #total').innerHTML = arrayProdutos.length;
     }
     for (let i = 0; i < arrayProdutos.length; i++) {
         tbody.innerHTML += `
