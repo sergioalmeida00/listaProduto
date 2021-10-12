@@ -3,6 +3,7 @@
     --gray: #A8A8B3;
     --gray-ligth: #ccc;
     --color-btn: #8D1EF3;
+    --color-btn-ligth: #bf8fec;
     --grenn: #50f211;
 }
 
@@ -42,7 +43,8 @@ main {
 }
 
 .container .title {
-    color: var(--gray);
+    color: white;
+    font-weight: bold;
 }
 
 #form .input-group {
@@ -55,6 +57,7 @@ main {
 #form input {
     padding: .5rem;
     border-radius: 5px;
+    border: none;
 }
 
 #form button {
@@ -96,7 +99,8 @@ table {
 }
 
 table th {
-    background-color: var(--gray);
+    background-color: var(--color-btn);
+    color: white;
 }
 
 table td {

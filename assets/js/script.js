@@ -1,6 +1,7 @@
 const form = document.querySelector('#form #adicionar');
 const btnRemoveAll = document.querySelector('#remover');
 arrayProdutos = [];
+
 form.addEventListener('click', (e) => {
     e.preventDefault();
     salvar();
@@ -19,18 +20,15 @@ let dbStorage = {
         listaTable();
 
     }
-
 }
 
 function salvar() {
-
     let produto = lerDados();
     if (validaCampos(produto)) {
         adicionar(produto);
     }
     listaTable();
     limparDados();
-
 }
 
 function listaTable() {
@@ -84,9 +82,9 @@ function lerDados() {
     return produto;
 }
 
-
 function limparDados() {
     document.querySelector('#produto').value = '';
     document.querySelector('#quantidade').value = '';
 }
+
 listaTable();
