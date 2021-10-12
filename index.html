@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/style-home.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>Document</title>
+
+    <script src="https://unpkg.com/feather-icons"></script>
+</head>
+
+<body>
+    <header>
+        Lista de Compras
+    </header>
+    <main>
+        <div class="container">
+            <div class="title">
+                <h2>Produtos</h2>
+                <span>Lista de Produtos de Compra</span>
+            </div>
+            <form action="" id="form">
+                <div class="input-group">
+                    <input type="text" id="produto" maxlength="30" placeholder="Nome do Produto">
+                    <input type="text" id="quantidade" placeholder="Quantidade do Produto">
+                </div>
+
+                <button type="submit" id="adicionar">Adicionar</button>
+                <button id="remover">Remover Tudo</button>
+            </form>
+        </div>
+        <div class="content">
+            <table border="1">
+                <thead>
+                    <th>ID</th>
+                    <th>Produto</th>
+                    <th>Quantidade</th>
+                    <th>Ações</th>
+                </thead>
+                <tbody>
+
+                </tbody>
+            </table>
+        </div>
+    </main>
+
+</body>
+<script src="assets/js/script.js"></script>
+<script>
+    feather.replace()
+</script>
+
+</html>

@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
+:root {
+    --gray: #A8A8B3;
+    --gray-ligth: #ccc;
+    --color-btn: #8D1EF3;
+    --grenn: #50f211;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    height: 100vh;
+    background-color: #121214;
+}
+
+header {
+    background-color: var(--color-btn);
+    color: white;
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 2rem;
+}
+
+main {
+    padding: 1rem;
+}
+
+.container {
+    max-width: 40rem;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    border-radius: .5rem;
+    padding: 1rem;
+    gap: 1rem;
+    margin-bottom: 2rem;
+}
+
+.container .title {
+    color: var(--gray);
+}
+
+#form .input-group {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+
+#form input {
+    padding: .5rem;
+    border-radius: 5px;
+}
+
+#form button {
+    padding: .5rem;
+    background-color: var(--color-btn);
+    border: none;
+    color: white;
+    font-weight: bold;
+    font-size: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: .5s;
+}
+
+#form button:hover {
+    background-color: var(--grenn);
+}
+
+#form #remover:hover {
+    background-color: red;
+}
+
+.content {
+    max-width: 40rem;
+    margin: auto;
+}
+
+.content {
+    display: block;
+    overflow-x: auto;
+}
+
+table {
+    border-collapse: collapse;
+    border: 1px solid var(--gray-ligth);
+    width: 100%;
+    border-radius: .4em;
+    overflow: hidden;
+}
+
+table th {
+    background-color: var(--gray);
+}
+
+table td {
+    text-align: center;
+    background-color: white;
+    padding: .5rem;
+}
+
+table td span {
+    transition: .5s;
+    cursor: pointer;
+}
+
+table td span:hover {
+    color: red;
+}
