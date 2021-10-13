@@ -45,19 +45,39 @@ main {
 .container .title {
     color: white;
     font-weight: bold;
+    margin-bottom: 1.5rem;
 }
 
 #form .input-group {
+    position: relative;
     display: flex;
     flex-direction: column;
-    gap: 1rem;
     margin-bottom: 1rem;
+    margin-bottom: 2rem;
 }
 
-#form input {
+#form .input-group input {
     padding: .5rem;
-    border-radius: 5px;
     border: none;
+    outline: none;
+    border-radius: 5px;
+}
+
+#form .input-group label {
+    position: absolute;
+    pointer-events: none;
+    top: 8px;
+    left: 10px;
+    font-weight: bold;
+    transition: .5s;
+}
+
+#form .input-group input:focus~label,
+#form .input-group input:valid~label {
+    top: -25px;
+    left: 0;
+    font-size: .9rem;
+    color: white;
 }
 
 #form button {
